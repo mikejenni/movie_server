@@ -7,8 +7,8 @@ const port = 3000;
 
 const MongoClient = mongodb.MongoClient;
 const url = "mongodb://localhost:27017";
-const dbName = 'todoApp';
-const collectionName = 'todos';
+const dbName = 'moviez';
+const collectionName = 'favorites';
 let db = undefined;
 let collection = undefined;
 
@@ -35,7 +35,7 @@ MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, connection) 
 /**
  * Return all todos
  */
-app.get('/todos', (req, res) => {
+app.get('/favorites', (req, res) => {
     collection.find({}).toArray(function(err, result) {
         if (err) throw err;
         res.send(result);
@@ -45,24 +45,26 @@ app.get('/todos', (req, res) => {
 /**
  * Insert one todo
  */
-app.post('/todo', (req, res) => {
-    const todo = req.body;
-    collection.insertOne(todo, function(err, result) {
+app.post('/favorite', (req, res) => {
+    const movie = req.body;
+    collection.insertOne(movie, function(err, result) {
         if (err) throw err;
-        res.send({result: 'todo inserted', todo: todo});
+        console.log(result)
+        res.send({result: 'movie added to favorite', movie: movie});
     });
 });
 
 /**
  * Delete todo by id
  */
-app.delete('/todo/:id', (req, res) => {
-    const query = { _id: new mongodb.ObjectID(req.params.id) };
+app.delete('/favorite/:id', (req, res) => {
+    const query = { id: req.params._id };
     collection.deleteOne(query, function(err, obj) {
         if (err) throw err;
         res.send({result: 'todo deleted'});
     });
 });
+
 
 /**
  * Start server
