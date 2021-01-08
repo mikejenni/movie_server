@@ -33,7 +33,20 @@ MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, connection) 
 });
 
 /**
- * Return all todos
+ * Check movie already exist
+ */
+app.get('/favorites/:movie', (req, res ) => {
+    const movie = req.params.movie;
+    console.log(movie);
+    collection.find({id: Number(movie)}).count().then(count => {
+        console.log(count);
+        res.send(count > 0);
+    });
+})
+
+
+/**
+ * Return all movies
  */
 app.get('/favorites', (req, res) => {
     collection.find({}).toArray(function(err, result) {
@@ -43,25 +56,24 @@ app.get('/favorites', (req, res) => {
 });
 
 /**
- * Insert one todo
+ * Insert one favorite
  */
 app.post('/favorite', (req, res) => {
     const movie = req.body;
     collection.insertOne(movie, function(err, result) {
         if (err) throw err;
-        console.log(result)
-        res.send({result: 'movie added to favorite', movie: movie});
+        res.send({status: 200, result: 'movie added to favorite', movie: movie});
     });
 });
 
 /**
- * Delete todo by id
+ * Delete favorite by id
  */
 app.delete('/favorite/:id', (req, res) => {
-    const query = { id: req.params._id };
+    const query = { id: Number(req.params.id) };
     collection.deleteOne(query, function(err, obj) {
         if (err) throw err;
-        res.send({result: 'todo deleted'});
+        res.send({status: 200, result: 'favorite deleted'});
     });
 });
 

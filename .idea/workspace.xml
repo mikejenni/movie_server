@@ -6,20 +6,14 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eede848f-7ebc-4b0e-a72d-91e3bd5cfcb8" name="Default Changelist" comment="V1" />
+    <list default="true" id="eede848f-7ebc-4b0e-a72d-91e3bd5cfcb8" name="Default Changelist" comment="V1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +50,8 @@
       <option name="presentableId" value="Default" />
       <updated>1609587156323</updated>
       <workItem from="1609587157514" duration="8535000" />
-      <workItem from="1609876468861" duration="1226000" />
+      <workItem from="1609876468861" duration="1840000" />
+      <workItem from="1609916021740" duration="9603000" />
     </task>
     <task id="LOCAL-00001" summary="V1">
       <created>1609877062318</created>
@@ -65,7 +60,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609877062318</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="V1">
+      <created>1609877837012</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609877837012</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,10 +118,15 @@
       <screen x="-3840" y="0" width="1536" height="840" />
     </state>
     <state x="-3561" y="58" key="SettingsEditor/-3840.0.1536.840/0.0.2560.1400@-3840.0.1536.840" timestamp="1609876823948" />
-    <state x="-3478" y="146" key="Vcs.Push.Dialog.v2" timestamp="1609877070514">
-      <screen x="-3840" y="0" width="1536" height="840" />
+    <state x="603" y="243" key="Vcs.Push.Dialog.v2" timestamp="1609877840720">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="-3478" y="146" key="Vcs.Push.Dialog.v2/-3840.0.1536.840/0.0.2560.1400@-3840.0.1536.840" timestamp="1609877070514" />
+    <state x="603" y="243" key="Vcs.Push.Dialog.v2/-3840.0.1536.840/0.0.2560.1400@0.0.2560.1400" timestamp="1609877840720" />
+    <state x="1044" y="602" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1609877821353">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1044" y="602" key="git4idea.remote.GitConfigureRemotesDialog/-3840.0.1536.840/0.0.2560.1400@0.0.2560.1400" timestamp="1609877821353" />
     <state x="-3240" y="204" key="svn.repositoryBrowser" timestamp="1609877004043">
       <screen x="-3840" y="0" width="1536" height="840" />
     </state>
